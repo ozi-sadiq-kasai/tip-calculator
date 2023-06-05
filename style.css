@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(185, 41%, 84%);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+}
+
+.split__header{
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.split__split{
+  letter-spacing: 7px;
+  font-size:1.5rem;
+  color:hsl(183, 100%, 15%);
+}
+main{
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  padding: 30px;
+}
+#form{
+  border: 1px solid red;
+}
+label[for='bill'],label[for='people'],.form__tip--selector
+{
+  display: inline-block;
+  width: 100%;
+  font-size:0.7rem;
+  color: hsl(186, 14%, 43%);
+}
+.bill__input{
+  width: 20%;
+  padding:7px 5px;
+  position: relative;
+  top: -1.5px;
+  right:10px;
+  
+}
+#form__currency{
+  /* border: 1px solid grey;
+  padding: 3.5px 90px ;
+  position: relative;
+  left: 10px;
+  top: 1px; */
+}
+#form__currency--div{
+  border: 1px solid grey;
+  padding: 3.5px 9px ;
+  width: 70%;
+  display: inline-block;
+}
+
+/* buttons */
+#form__buttons{
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 0.4rem;
+}
+.button{
+  padding: 5px 8px;
+}
